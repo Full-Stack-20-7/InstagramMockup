@@ -1,0 +1,234 @@
+/* 전체 레이아웃 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #262626;
+}
+
+.container {
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 30px 20px 0;
+}
+
+/* 프로필 헤더 레이아웃 */
+.profile-header {
+    display: flex;
+    margin-bottom: 44px;
+}
+
+/* 프로필 이미지 */
+.profile-image-container {
+    flex-basis: 0;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.profile-image-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.profile-image-inner {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.profile-image-inner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 프로필 정보 */
+.profile-info {
+    flex-basis: 0;
+    flex-grow: 2;
+}
+
+.profile-info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.username {
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 20px;
+}
+
+.verified-badge {
+    margin-right: 15px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    border: 1px solid #dbdbdb;
+    background-color: #efefef;
+    padding: 7px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: #dbdbdb;
+}
+
+.options-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+/* 통계 (게시물, 팔로워, 팔로잉) */
+.stats {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.stats li {
+    font-size: 16px;
+}
+
+.stats li span {
+    font-weight: 600;
+}
+
+/* 바이오 */
+.bio {
+    font-size: 14px;
+}
+
+.bio-name {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.bio-text {
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
+
+.bio-link {
+    color: #00376b;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.threads-link {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.threads-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* 팔로우 정보 */
+.mutual-followers {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #737373;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.follower-avatars {
+    display: flex;
+}
+
+.follower-avatars img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -10px;
+}
+
+.follower-avatars img:first-child {
+    margin-left: 0;
+}
+
+/* 스토리 하이라이트 */
+.highlights {
+    display: flex;
+    gap: 45px;
+    margin-bottom: 44px;
+    padding: 10px 0;
+}
+
+.highlight-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.highlight-image-wrapper {
+    width: 77px;
+    height: 77px;
+    padding: 3px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+}
+
+.highlight-image-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fafafa;
+    overflow: hidden;
+}
+
+.highlight-image-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.highlight-title {
+    font-size: 12px;
+    font-weight: 600;
+}
+

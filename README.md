@@ -4,7 +4,7 @@
 - 팀원: 4인 (팀장 민지연, 장지현, 최애정, 양재원)
 
 ```markdown
-📦 YOUTUBEMOCKUP
+📦 INSTAGRAMMOCKUP
 ┣ 📂 assets # 정적 파일 (이미지, 아이콘 등)
 ┃
 ┣ 📂 css # 스타일시트

@@ -39,6 +39,46 @@
     <!-- … -->
   </main>
 
+  <!-- 오른쪽 사이드바 (추천 영역) -->
+  <aside class="sidebar">
+    <!-- 1. 내 프로필 영역 -->
+    <div class="profile">
+      <img src="assets/my-avatar.jpg" alt="My Avatar" class="profile__avatar" />
+      <div class="profile__info">
+        <strong>my_username</strong>
+        <span>My Name</span>
+      </div>
+    </div>
+
+    <!-- 2. 추천 친구 영역 -->
+    <div class="suggestions">
+      <div class="suggestions__header">
+        <span>추천 계정</span>
+        <a href="#">모두 보기</a>
+      </div>
+      <ul class="suggestions__list">
+        <!-- 더미 데이터 반복 -->
+        <li class="suggestion-item">
+          <img src="assets/user1.jpg" alt="" class="suggestion-item__avatar" />
+          <div class="suggestion-item__info">
+            <strong>user1</strong>
+            <span>팔로우 중</span>
+          </div>
+          <button class="follow-btn">팔로우</button>
+        </li>
+        <!-- 나머지도 반복 -->
+      </ul>
+    </div>
+
+    <!-- 3. 푸터 링크 영역 -->
+    <footer class="sidebar__footer">
+      <a href="#">소개</a>
+      <a href="#">도움말</a>
+      <a href="#">개발자</a>
+      <span>© 2024 INSTAGRAM FROM META</span>
+    </footer>
+  </aside>
+
   <script src="sidebar.js"></script>
 </body>
 </html>

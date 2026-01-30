@@ -1,10 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <title>Instagram Mockup</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--  -->
+  <link rel="stylesheet" href="css/index.css" />
+  <title>Instagram Mockup</title>
+</head>
+<body>
+  <!-- 1. 헤더 삽입 위치 -->
+  <div id="header-container"></div>
+
+  <!-- 2. 사이드바 + 메인 컨텐츠 래퍼 -->
+  <div class="container">
+    <!-- 2-1. 사이드바 삽입 위치 -->
+    <aside id="sidebar-container"></aside>
+
+    <!-- 2-2. 메인 피드 / 게시물 삽입 위치 -->
+    <main id="main-container">
+      <!-- 예: <div id="stories-container"></div> -->
+      <!-- 예: <div id="feed-container"></div> -->
+    </main>
+  </div>
+
+  <!-- 3. 하단 네비게이션 삽입 위치 (선택) -->
+  <div id="footer-nav-container"></div>
+
+  <!-- 4. 컴포넌트 로딩 스크립트 -->
+  <script>
+    // 4-1. 헤더 로드
+    fetch('components/header.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('header-container').innerHTML = html;
+      });
+
+    // 4-2. 사이드바 로드
+    fetch('components/sidebar.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('sidebar-container').innerHTML = html;
+      });
+
+    // 4-3. 메인 컨텐츠 (예: stories, feed) 로드
+    // fetch('components/stories.html')...
+    // fetch('components/feed.html')...
+
+    // 4-4. 하단 네비게이션 로드 (선택)
+    // fetch('components/footerNav.html')...
+  </script>
+</body>
 </html>

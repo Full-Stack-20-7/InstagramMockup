@@ -1,0 +1,66 @@
+/* 전체 레이아웃 */
+.container {
+  display: flex;
+  max-width: 935px;
+  margin: 0 auto;
+}
+
+/* 사이드바 */
+#sidebar-container .sidebar {
+  width: 293px;
+  margin-right: 28px;
+  font-size: 14px;
+  color: #262626;
+}
+
+/* 프로필 */
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.profile__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+/* 추천 계정 리스트 – 기본 불릿 삭제 */
+.suggestions__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.suggestion-item__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.follow-btn {
+  background: none;
+  border: none;
+  color: #0095f6;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* 푸터 링크 */
+.sidebar__footer {
+  margin-top: 24px;
+  font-size: 11px;
+  color: #8e8e8e;
+}
+.sidebar__footer a {
+  margin-right: 8px;
+  text-decoration: none;
+  color: #8e8e8e;
+}

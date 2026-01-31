@@ -2,158 +2,44 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>Sidebar</title>
-  <style>
-    /* ─────────────────────────────────────
-       사이드바 전체 컨테이너
-    ───────────────────────────────────── */
-    .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 60px;              /* 아이콘 크기에 맞춰 조절 */
-      height: 100vh;
-      background-color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px 0;
-      box-shadow: 1px 0 5px rgba(0,0,0,0.1);
-      z-index: 100;
-    }
-
-    /* ─────────────────────────────────────
-       아이콘 리스트 (ul)
-    ───────────────────────────────────── */
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      width: 100%;
-    }
-    .sidebar li {
-      width: 100%;
-      margin-bottom: 24px;      /* 아이콘 간 간격 */
-      text-align: center;
-    }
-
-    /* ─────────────────────────────────────
-       링크 + 아이콘 스타일
-    ───────────────────────────────────── */
-    .sidebar a {
-      display: inline-block;
-      position: relative;       /* badge 위한 부모 위치 설정 */
-      width: 100%;
-    }
-    .sidebar img {
-      display: block;
-      width: 28px;               /* 아이콘 실제 크기에 맞춰 조절 */
-      height: 28px;
-      margin: 0 auto;
-    }
-
-    /* ─────────────────────────────────────
-       알림 뱃지 (badge)
-    ───────────────────────────────────── */
-    .sidebar .badge {
-      position: absolute;
-      top: -4px;
-      right: -4px;
-      background-color: #F04438;
-      color: #ffffff;
-      font-size: 10px;
-      line-height: 1;
-      padding: 2px 4px;
-      border-radius: 12px;
-    }
-
-    /* ─────────────────────────────────────
-       아래로 아이콘 몰아놓기 (옵션)
-    ───────────────────────────────────── */
-    .sidebar .bottom {
-      margin-top: auto;
-    }
-  </style>
+  <title>Instagram‐style Sidebar</title>
+  <link rel="stylesheet" href="sidebar.css">
 </head>
 <body>
 
+  <!-- 토글 버튼 (열기/닫기) -->
+  <button id="sidebarToggle" aria-label="Toggle sidebar">
+    ☰
+  </button>
+
+  <!-- 사이드바 -->
   <nav class="sidebar">
     <ul>
-      <!-- 1. Instagram -->
+      <li><a href="#"><img src="assets/instagramlogo.jpg" alt="Instagram"></a></li>
+      <li><a href="#"><img src="assets/home.jpg"      alt="Home"></a></li>
+      <li><a href="#"><img src="assets/reels.jpg"     alt="Reels"></a></li>
       <li>
         <a href="#">
-          <img src="assets/sidebar-instagramlogo.jpg" alt="Instagram">
-        </a>
-      </li>
-      <!-- 2. Home -->
-      <li>
-        <a href="#">
-          <img src="assets/sidebar-home.jpg" alt="Home">
-        </a>
-      </li>
-      <!-- 3. Reel -->
-      <li>
-        <a href="#">
-          <img src="assets/sidebar-reels.jpg" alt="Reels">
-        </a>
-      </li>
-      <!-- 4. 메시지(9+ 알림) -->
-      <li>
-        <a href="#">
-          <img src="assets/sidebar-dm.png" alt="Messages">
+          <img src="assets/sidebar-dm.jpg" alt="Messages">
           <span class="badge">9+</span>
         </a>
       </li>
-      <!-- 5. 검색 -->
-      <li>
-        <a href="#">
-          <img src="assets/sidebar-search.jpg" alt="Search">
-        </a>
-      </li>
-      <!-- 6. 둘러보기 -->
-      <li>
-        <a href="#">
-          <img src="assets/sidebar-explore.png" alt="Explore">
-        </a>
-      </li>
-      <!-- 7. 좋아요(알림 뱃지 찍고 싶으면 여기도 .badge 추가) -->
-      <li>
-        <a href="#">
-          <img src="assets/sidebar-like.jpg" alt="Likes">
-          <!-- <span class="badge">•</span>  -->
-        </a>
-      </li>
-      <!-- 8. 새 게시물 만들기(+) -->
-      <li>
-        <a href="#">
-          <img src="assets/sidebar-+.png" alt="New Post">
-        </a>
-      </li>
-      <!-- Profile 이미지: 생략 가능 -->
-      <li>
-        <a href="#">
-          <img src="icons/9.jpg" alt="Profile" style="border-radius:50%;">
-        </a>
-      </li>
-      <!-- 10. 메뉴(햄버거) -->
-      <li>
-        <a href="#">
-          <img src="assets/sidebar-more.jpg" alt="Menu">
-        </a>
-      </li>
-      <!-- 11. 그리드 -->
-      <li>
-        <a href="#">
-          <img src="assets/sidebar-metaapps.jpg" alt="Grid">
-        </a>
-      </li>
+      <li><a href="#"><img src="assets/search.jpg"    alt="Search"></a></li>
+      <li><a href="#"><img src="assets/explore.jpg"   alt="Explore"></a></li>
+      <li><a href="#"><img src="assets/likes.jpg"     alt="Likes"></a></li>
+      <li><a href="#"><img src="assets/newpost.jpg"   alt="New Post"></a></li>
+      <li><a href="#"><img src="assets/profile.jpg"   alt="Profile" class="profile"></a></li>
+      <li><a href="#"><img src="assets/menu.jpg"      alt="Menu"></a></li>
+      <li><a href="#"><img src="assets/grid.jpg"      alt="Grid"></a></li>
     </ul>
   </nav>
 
-  <!-- 메인 콘텐츠 자리 -->
-  <div class="content" style="margin-left:60px; padding:20px;">
+  <!-- 메인 콘텐츠 -->
+  <main class="content">
     <h1>여기에 메인 콘텐츠</h1>
-  </div>
+    <!-- … -->
+  </main>
 
+  <script src="sidebar.js"></script>
 </body>
 </html>

@@ -1,33 +1,62 @@
 /* 사이드바 전체 레이아웃 */
 .sidebar {
-  width: 240px;
+  width: 245px;
   height: 100vh;
   border-right: 1px solid #dbdbdb;
-  padding: 20px 12px;
+  padding: 8px 12px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
 }
 
-/* 1. 모든 아이콘 크기 고정 (중구난방 해결) */
-.sidebar img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-}
-
-/* 2. 로고만 특별히 크게 (첫 번째 리스트 아이템) */
-.sidebar ul li:first-child img {
-  width: 103px;
-  height: auto;
-  margin: 10px 0 25px 0;
-}
-
-/* 3. 리스트 스타일 정리 */
+/* 리스트 기본 스타일 제거 */
 .sidebar ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.sidebar li {
-  margin-bottom: 12px;
+/* 1. 로고 섹션 (예시처럼 상단 여백 크게) */
+.sidebar li:first-child {
+  padding: 25px 12px 35px 12px;
+}
+
+.sidebar li:first-child img {
+  width: 50px; /* 인스타그램 로고 정사이즈 */
+  height: auto;
+}
+
+/* 2. 일반 메뉴 아이콘과 텍스트 배치 */
+.sidebar li a {
   display: flex;
   align-items: center;
+  gap: 16px;       /* 아이콘과 글자 사이 간격 */
+  padding: 12px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400; /* 인스타그램은 약간 얇은 폰트 사용 */
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+/* 마우스 올렸을 때 회색 배경 효과 */
+.sidebar li a:hover {
+  background-color: #fafafa;
+}
+
+/* 3. 아이콘 크기 고정 (중구난방 해결) */
+.sidebar img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* 4. '홈' 메뉴를 강조하고 싶을 때 (선택사항) */
+.sidebar li a:active {
+  font-weight: 700;
 }

@@ -1,0 +1,33 @@
+/* 사이드바 전체 레이아웃 */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  border-right: 1px solid #dbdbdb;
+  padding: 20px 12px;
+}
+
+/* 1. 모든 아이콘 크기 고정 (중구난방 해결) */
+.sidebar img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* 2. 로고만 특별히 크게 (첫 번째 리스트 아이템) */
+.sidebar ul li:first-child img {
+  width: 103px;
+  height: auto;
+  margin: 10px 0 25px 0;
+}
+
+/* 3. 리스트 스타일 정리 */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}

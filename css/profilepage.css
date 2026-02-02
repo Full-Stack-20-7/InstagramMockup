@@ -281,13 +281,12 @@ body {
 .profile-tabs {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 130px;
 }
 
 .tab-item-wrapper {
     display: flex;
     align-items: center;
-    margin-top: 5px;
 }
 
 .tab-item {
@@ -295,20 +294,41 @@ body {
     align-items: center;
     justify-content: center;
     height: 52px;
+    padding: 0 20px;
     cursor: pointer;
     color: #8e8e8e;
     text-decoration: none;
-    border-top: 1px solid transparent;
     margin-top: -1px;
+    margin-bottom: 1px;
+    position: relative;
 }
 
 .tab-item.active {
     color: #262626;
-    border-bottom: 2px solid #262626;
+}
+
+.tab-item.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #262626;
 }
 
 .tab-item:hover {
     color: #262626;
+}
+
+.tab-item:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #262626;
 }
 
 .tab-icon-wrapper {
@@ -373,7 +393,7 @@ body {
 }
 
 .post-item-link:hover .post-overlay {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
     opacity: 1;
 }
 

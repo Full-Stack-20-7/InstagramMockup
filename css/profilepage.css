@@ -15,15 +15,15 @@ body {
 
 /* 프로필 헤더 메인 레이아웃 */
 .profile-header-main {
-    max-width: 935px;
+    max-width: 620px;
     margin: 0 auto;
-    padding: 30px 20px;
+    padding: 10px 10px;
 }
 
 /* 프로필 컨텐츠: 이미지 + 정보 */
 .profile-content {
     display: flex;
-    gap: 30px;
+    gap: 25px;
     margin-bottom: 12px;
     align-items: flex-start;
 }
@@ -69,13 +69,14 @@ body {
 .profile-username-row {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 4px;
+    margin-top: 8px;
     margin-bottom: 4px;
 }
 
 .username {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -89,12 +90,13 @@ body {
 /* 통계 행 */
 .stats-row {
     display: flex;
-    gap: 40px;
-    margin-bottom: 12px;
+    gap: 18px;
+    margin-top: 4px;
+    margin-bottom: 18px;
 }
 
 .stat-item {
-    font-size: 16px;
+    font-size: 14px;
     color: #262626;
 }
 
@@ -107,6 +109,8 @@ body {
     display: flex;
     gap: 8px;
     margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .btn {
@@ -114,7 +118,8 @@ body {
     background-color: #f1f1f1;
     padding: 0 16px;
     height: 45px;
-    border-radius: 8px;
+    border-radius: 12px;
+    margin-top: 14px;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
@@ -169,7 +174,6 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,7 +187,7 @@ body {
 }
 
 .profile-category {
-    font-weight: 600;
+    font-weight: 400;
     color: #8e8e8e;
     margin-bottom: 4px;
     font-size: 14px;
@@ -201,9 +205,9 @@ body {
 }
 
 .bio-link {
-    color: #00376b;
+    color: #4150f7;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 600;
     display: inline-flex;
     align-items: center;
     gap: 4px;
@@ -217,14 +221,14 @@ body {
     font-size: 14px;
     text-decoration: none;
     color: #262626;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 /* 스토리 하이라이트 섹션 */
 .highlights-section {
-    max-width: 850px;
-    margin: 0 auto 44px;
-    padding: 20px;
+    max-width: 570px;
+    margin: 0 auto 10px;
+    padding: 18px 10px;
     display: flex;
     gap: 18px;
     overflow-x: auto;
@@ -234,7 +238,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 8px;
     cursor: pointer;
     flex-shrink: 0;
     width: 80px; /* 아이템 자체의 가로 길이를 제한 */
@@ -264,6 +268,7 @@ body {
 
 .highlight-title {
     font-size: 12px;
+    font-weight: 600;
     color: #262626;
     text-align: center;
     overflow: hidden;
@@ -348,7 +353,7 @@ body {
     }
     .profile-username-row {
         flex-direction: column;
-        gap: 15px;
+        gap: 5px;
     }
     .stats {
         justify-content: center;

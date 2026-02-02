@@ -109,8 +109,8 @@ body {
     display: flex;
     gap: 8px;
     margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .btn {
@@ -161,7 +161,7 @@ body {
     width: 45px !important;
     height: 45px;
     padding: 0 !important;
-    flex: 0 0 40px !important;
+    flex: 0 0 45px !important;
     flex-shrink: 0;
 }
 

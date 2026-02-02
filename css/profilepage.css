@@ -325,32 +325,103 @@ body {
     margin-bottom: 50px;
 }
 
-.post-item {
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    cursor: pointer;
+.post-item-wrapper {
     position: relative;
 }
 
-.post-item img {
+.post-item-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.post-image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.post-image-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.post-image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.post-item::after {
-    content: "";
+.post-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0);
-    transition: background-color 0.2s;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0s, background-color 0s;
 }
 
-.post-item:hover::after {
-    background-color: rgba(0, 0, 0, 0.1);
+.post-item-link:hover .post-overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 1;
+}
+
+.post-hover-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: #ffffff;
+}
+
+.post-stat-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.post-stat-item svg {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+    stroke: #ffffff;
+}
+
+.post-stat-count {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.post-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 1;
+}
+
+.post-badge-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.post-pinned-icon {
+    color: #ffffff;
 }
 
 /* 모바일 대응 (간단하게) */

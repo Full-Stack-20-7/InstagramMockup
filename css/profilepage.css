@@ -301,6 +301,16 @@ body {
     margin-top: -1px;
     margin-bottom: 1px;
     position: relative;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tab-item:focus {
+    outline: none;
+}
+
+.tab-item:focus-visible {
+    outline: none;
 }
 
 .tab-item.active {

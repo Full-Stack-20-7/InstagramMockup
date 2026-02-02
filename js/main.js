@@ -129,5 +129,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 게시물 로드
     loadPosts();
+
+    // 탭 버튼 클릭 기능
+    const initTabs = () => {
+        const tabItems = document.querySelectorAll('.tab-item');
+        
+        tabItems.forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // 모든 탭에서 active 클래스와 aria-selected 제거
+                tabItems.forEach(item => {
+                    item.classList.remove('active');
+                    item.setAttribute('aria-selected', 'false');
+                });
+                
+                // 클릭한 탭에 active 클래스와 aria-selected 추가
+                tab.classList.add('active');
+                tab.setAttribute('aria-selected', 'true');
+            });
+        });
+    };
+
+    // 탭 초기화 (DOM 로드 후)
+    setTimeout(() => {
+        initTabs();
+    }, 100);
 });
 

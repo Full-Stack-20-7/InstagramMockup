@@ -279,29 +279,41 @@ body {
 
 /* 탭 메뉴 */
 .profile-tabs {
-    border-top: 1px solid #dbdbdb;
     display: flex;
     justify-content: center;
     gap: 60px;
 }
 
+.tab-item-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .tab-item {
     display: flex;
     align-items: center;
-    gap: 6px;
+    justify-content: center;
     height: 52px;
     cursor: pointer;
     color: #8e8e8e;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    text-decoration: none;
+    border-top: 1px solid transparent;
+    margin-top: -1px;
 }
 
 .tab-item.active {
     color: #262626;
-    border-top: 1px solid #262626;
-    margin-top: -1px;
+    border-bottom: 2px solid #262626;
+}
+
+.tab-item:hover {
+    color: #262626;
+}
+
+.tab-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* 게시물 그리드 */

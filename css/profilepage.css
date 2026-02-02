@@ -8,32 +8,37 @@ body {
 }
 
 .container {
-    max-width: 935px;
+    max-width: 850px;
     margin: 0 auto;
     padding: 30px 20px 0;
 }
 
 /* 프로필 헤더 메인 레이아웃 */
 .profile-header-main {
-    display: flex;
-    margin-bottom: 44px;
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
 
-/* 프로필 이미지 섹션 */
-.profile-image-section {
-    flex-basis: 0;
-    flex-grow: 1;
+/* 프로필 컨텐츠: 이미지 + 정보 */
+.profile-content {
     display: flex;
-    justify-content: center;
-    margin-right: 30px;
+    gap: 30px;
+    margin-bottom: 12px;
+    align-items: flex-start;
+}
+
+/* 프로필 정보 영역 */
+.profile-info {
+    flex: 1;
 }
 
 .profile-image-wrapper {
     position: relative;
     width: 150px;
     height: 150px;
-    padding: 7.5px; /* 무지개 테두리 두께 */
-    background: linear-gradient(40deg, #fff824 0%, #ff2cb5 70%, #b300c7 100%);
+    padding: 4px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     border-radius: 50%;
     display: flex;
     flex-shrink: 0;
@@ -44,9 +49,9 @@ body {
 .profile-image-inner {
     width: 100%;
     height: 100%;
-    background-color: white; /* 무지개와 이미지 사이의 흰색 도넛 공간 */
+    background-color: white;
     border-radius: 50%;
-    padding: 4px; /* 흰색 간격 두께 */
+    padding: 5px;
     display: flex;
     flex-shrink: 0;
     justify-content: center;
@@ -60,20 +65,12 @@ body {
     object-fit: cover;
 }
 
-/* 프로필 정보 섹션 */
-.profile-info-section {
-    flex-basis: 0;
-    flex-grow: 2;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-}
-
+/* 프로필 사용자명 행 */
 .profile-username-row {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    gap: 8px;
+    gap: 16px;
+    margin-bottom: 4px;
 }
 
 .username {
@@ -82,24 +79,41 @@ body {
     margin: 0;
 }
 
-.verified-badge {
-    display: flex;
-    align-items: center;
-    margin-right: 12px;
+/* 서브네임 */
+.profile-subname {
+    font-size: 14px;
+    color: #262626;
+    margin-bottom: 12px;
 }
 
-/* 액션 버튼들 (사용자명 옆에 배치) */
+/* 통계 행 */
+.stats-row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 12px;
+}
+
+.stat-item {
+    font-size: 16px;
+    color: #262626;
+}
+
+.stat-item strong {
+    font-weight: 600;
+}
+
+/* 액션 버튼들 */
 .profile-actions {
     display: flex;
     gap: 8px;
-    align-items: center;
+    margin-bottom: 20px;
 }
 
 .btn {
     border: none;
     background-color: #efefef;
     padding: 0 16px;
-    height: 32px;
+    height: 45px;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
@@ -110,10 +124,40 @@ body {
     align-items: center;
     justify-content: center;
     white-space: nowrap;
+    flex: 1;
 }
 
 .btn:hover {
     background-color: #dbdbdb;
+}
+
+/* 팔로우 버튼 - 파란색 */
+.btn-follow {
+    background-color: #005af6;
+    color: #ffffff;
+}
+
+.btn-follow:hover {
+    background-color: #1877f2;
+}
+
+/* 메시지 보내기 버튼 - 회색 */
+.btn-message {
+    background-color: #efefef;
+    color: #262626;
+}
+
+.btn-message:hover {
+    background-color: #dbdbdb;
+}
+
+/* 추가 버튼 - 짧게 */
+.btn-add {
+    width: 45px !important;
+    height: 45px;
+    padding: 0 !important;
+    flex: 0 0 40px !important;
+    flex-shrink: 0;
 }
 
 .similar-accounts-btn {
@@ -132,96 +176,57 @@ body {
     color: #262626;
 }
 
-/* 통계 */
-.stats {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 40px;
-    margin: 0 0 20px 0;
-}
-
-.stats li {
-    font-size: 16px;
-    color: #262626;
-}
-
-.stats li span {
-    font-weight: 600;
-}
 
 /* 바이오 */
 .bio {
     font-size: 14px;
-    margin-bottom: 20px;
 }
 
-.profile-display-name {
+.profile-category {
     font-weight: 600;
+    color: #8e8e8e;
     margin-bottom: 4px;
+    font-size: 14px;
 }
 
 .bio-text {
     line-height: 1.5;
-    white-space: pre-wrap;
+    margin-bottom: 8px;
+}
+
+.bio-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 .bio-link {
     color: #00376b;
     text-decoration: none;
-    font-weight: 600;
-    display: flex;
+    font-weight: 400;
+    display: inline-flex;
     align-items: center;
-    gap: 5px;
-    margin-top: 5px;
+    gap: 4px;
+    font-size: 14px;
 }
 
 .threads-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
     font-size: 14px;
     text-decoration: none;
     color: #262626;
-    margin-top: 8px;
-    background-color: #efefef;
-    padding: 2px 10px;
-    border-radius: 100px;
-    width: fit-content;
-}
-
-/* 팔로우 정보 */
-.mutual-followers {
-    font-size: 12px;
-    color: #737373;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 10px;
-}
-
-.follower-avatars {
-    display: flex;
-}
-
-.follower-avatars img {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 2px solid white;
-    margin-left: -10px;
-}
-
-.follower-avatars img:first-child {
-    margin-left: 0;
+    font-weight: 400;
 }
 
 /* 스토리 하이라이트 섹션 */
 .highlights-section {
+    max-width: 850px;
+    margin: 0 auto 44px;
+    padding: 20px;
     display: flex;
-    gap: 20px; /* 간격을 45px에서 20px로 대폭 축소 */
-    margin-bottom: 44px;
-    padding: 10px 0 10px 25px; /* 왼쪽 여백을 주어 중앙으로 모음 */
+    gap: 18px;
     overflow-x: auto;
 }
 
@@ -229,16 +234,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     cursor: pointer;
     flex-shrink: 0;
-    width: 85px; /* 아이템 자체의 가로 길이를 제한 */
+    width: 70px;
 }
 
 .highlight-image-wrapper {
-    width: 77px;
-    height: 77px;
-    padding: 3px;
+    width: 64px;
+    height: 64px;
+    padding: 2px;
     border: 1px solid #dbdbdb;
     border-radius: 50%;
 }
@@ -259,7 +264,12 @@ body {
 
 .highlight-title {
     font-size: 12px;
-    font-weight: 600;
+    color: #262626;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 70px;
 }
 
 /* 탭 메뉴 */

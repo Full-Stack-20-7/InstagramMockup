@@ -1,62 +1,70 @@
 <div class="profile-header-main">
-    <!-- 프로필 이미지 섹션 -->
-    <div class="profile-image-section">
+    <!-- 프로필 섹션: 이미지 + 정보 -->
+    <div class="profile-content">
+        <!-- 프로필 이미지 -->
         <div class="profile-image-wrapper">
             <div class="profile-image-inner">
                 <img src="https://i0.wp.com/digitalhealthskills.com/wp-content/uploads/2022/11/3da39-no-user-image-icon-27.png?fit=500%2C500&ssl=1" alt="goorm님의 프로필 사진">
             </div>
         </div>
-    </div>
 
-    <!-- 프로필 정보 섹션 -->
-    <div class="profile-info-section">
-        <div class="profile-username-row">
-            <h2 class="username">goorm</h2>
-            <div class="verified-badge">
-                <svg aria-label="인증됨" fill="rgb(0, 149, 246)" height="18" role="img" viewBox="0 0 40 40" width="18">
-                    <path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path>
-                </svg>
-            </div>
-            
-            <div class="profile-actions">
-                <button class="btn">팔로잉 <svg aria-label="아래쪽 V자형 아이콘" fill="currentColor" height="12" role="img" viewBox="0 0 24 24" width="12" style="margin-left: 5px;"><path d="M21 17.502a.997.997 0 0 1-.707-.293L12 8.913l-8.293 8.296a1 1 0 1 1-1.414-1.414l9-9.004a1.03 1.03 0 0 1 1.414 0l9 9.004A1 1 0 0 1 21 17.502Z"></path></svg></button>
-                <button class="btn">메시지 보내기</button>
-                <button class="btn similar-accounts-btn">
-                    <svg aria-label="비슷한 계정" fill="currentColor" height="16" role="img" viewBox="0 0 24 24" width="16"><path d="M4 14V8a1 1 0 0 1 2 0v6a1 1 0 1 1-2 0Z"></path><path d="M8 10a1 1 0 1 1 0 2H2a1 1 0 1 1 0-2h6Zm9.5-2.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Zm2 0a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm-4.501 5.667c3.147 0 5.945 1.495 7.61 3.801.889 1.231.185 2.837-1.18 3.215-1.34.372-3.549.817-6.429.817-2.878 0-5.091-.447-6.44-.822-1.37-.38-2.048-1.995-1.17-3.212 1.666-2.305 4.463-3.8 7.609-3.8Zm0 2c-2.51 0-4.702 1.191-5.987 2.971-.01.015-.012.024-.012.024 0 .003 0 .01.004.02s.012.023.024.035c.012.01.032.025.068.035C10.297 18.585 12.33 19 15 19c2.674 0 4.7-.413 5.895-.744a.182.182 0 0 0 .076-.038.096.096 0 0 0 .025-.038.044.044 0 0 0 .004-.017s0-.008-.012-.024c-1.285-1.78-3.478-2.972-5.989-2.972Z"></path></svg>
+        <!-- 프로필 정보 -->
+        <div class="profile-info">
+            <!-- 사용자명 + 옵션 -->
+            <div class="profile-username-row">
+                <h2 class="username">goorm.co</h2>
+                <button class="options-btn">
+                    <svg aria-label="옵션" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24">
+                        <circle cx="12" cy="12" r="1.5"></circle>
+                        <circle cx="6" cy="12" r="1.5"></circle>
+                        <circle cx="18" cy="12" r="1.5"></circle>
+                    </svg>
                 </button>
             </div>
 
-            <button class="options-btn">
-                <svg aria-label="옵션" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24"><circle cx="12" cy="12" r="1.5"></circle><circle cx="6" cy="12" r="1.5"></circle><circle cx="18" cy="12" r="1.5"></circle></svg>
-            </button>
-        </div>
+            <!-- 서브네임 -->
+            <div class="profile-subname">구름</div>
 
-        <ul class="stats">
-            <li>게시물 <span>1,890</span></li>
-            <li>팔로워 <span>118.6만</span></li>
-            <li>팔로우 <span>1,002</span></li>
-        </ul>
-
-        <div class="bio">
-            <div class="profile-display-name">goorm fullstack</div>
-            <div class="bio-text">☁️ goorm fullstack developer</div>
-            <a href="#" class="bio-link">
-                <svg aria-label="링크 아이콘" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16"><path d="m9.726 5.123 1.228-1.228a6.47 6.47 0 0 1 9.15 9.152l-1.227 1.227m-4.603 4.603-1.228 1.228a6.47 6.47 0 0 1-9.15-9.152l1.227-1.227"></path><line x1="8.471" x2="15.529" y1="15.529" y2="8.471"></line></svg>
-                youtube.com/goorm
-            </a>
-            <a href="#" class="threads-link">
-                <svg aria-label="Threads" fill="currentColor" height="16" viewBox="0 0 192 192" width="16"><path d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z"></path></svg>
-                goorm
-            </a>
-        </div>
-
-        <div class="mutual-followers">
-            <div class="follower-avatars">
-                <img src="https://i0.wp.com/digitalhealthskills.com/wp-content/uploads/2022/11/3da39-no-user-image-icon-27.png?fit=500%2C500&ssl=1" alt="팔로워">
-                <img src="https://i0.wp.com/digitalhealthskills.com/wp-content/uploads/2022/11/3da39-no-user-image-icon-27.png?fit=500%2C500&ssl=1" alt="팔로워">
+            <!-- 통계 -->
+            <div class="stats-row">
+                <span class="stat-item">게시물 <strong>198</strong></span>
+                <span class="stat-item">팔로워 <strong>5246</strong></span>
+                <span class="stat-item">팔로우 <strong>1</strong></span>
             </div>
-            <span>follower1, follower2님 외 다수가 팔로우합니다</span>
+
+            <!-- 바이오 -->
+            <div class="bio">
+                <div class="profile-category">소프트웨어</div>
+                <div class="bio-text">ANYONE CAN DEVELOP☁️</div>
+                <div class="bio-links">
+                    <a href="#" class="bio-link">
+                        <svg aria-label="링크" fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="12">
+                            <path d="m9.726 5.123 1.228-1.228a6.47 6.47 0 0 1 9.15 9.152l-1.227 1.227m-4.603 4.603-1.228 1.228a6.47 6.47 0 0 1-9.15-9.152l1.227-1.227"></path>
+                            <line x1="8.471" x2="15.529" y1="15.529" y2="8.471"></line>
+                        </svg>
+                        litt.ly/goorm.co
+                    </a>
+                    <a href="#" class="threads-link">
+                        <svg aria-label="Threads" fill="currentColor" height="12" viewBox="0 0 192 192" width="12">
+                            <path d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z"></path>
+                        </svg>
+                        goorm.co
+                    </a>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <!-- 액션 버튼들 -->
+    <div class="profile-actions">
+        <button class="btn btn-follow">팔로우</button>
+        <button class="btn btn-message">메시지 보내기</button>
+        <button class="btn btn-add">
+            <svg aria-label="사람 추가" fill="currentColor" height="16" role="img" viewBox="0 0 24 24" width="16">
+                <path d="M19 12h-2v3h-3v2h3v3h2v-3h3v-2h-3z"></path>
+                <path d="M9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm6.39 8.56C13.71 13.7 11.53 13 9 13s-4.71.7-6.39 1.56C1.61 15.07 1 16.1 1 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66zM15 18H3v-.78c0-.38.2-.72.52-.88C4.71 15.73 6.63 15 9 15c2.37 0 4.29.73 5.48 1.34.32.16.52.5.52.88V18z"></path>
+            </svg>
+        </button>
     </div>
 </div>
 
@@ -65,17 +73,41 @@
     <div class="highlight-item">
         <div class="highlight-image-wrapper">
             <div class="highlight-image-inner">
-                <img src="https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?w=150&h=150&fit=crop" alt="EVERGREEN">
+                <img src="https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?w=150&h=150&fit=crop" alt="1st 구름톤">
             </div>
         </div>
-        <span class="highlight-title">DEVELOPER</span>
+        <span class="highlight-title">1st 구름톤⛅</span>
     </div>
     <div class="highlight-item">
         <div class="highlight-image-wrapper">
             <div class="highlight-image-inner">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=150&h=150&fit=crop" alt="ハイライト">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=150&h=150&fit=crop" alt="Go Go!">
             </div>
         </div>
-        <span class="highlight-title">Highlight</span>
+        <span class="highlight-title">Go Go!</span>
+    </div>
+    <div class="highlight-item">
+        <div class="highlight-image-wrapper">
+            <div class="highlight-image-inner">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=150&h=150&fit=crop" alt="Hi 코딩몬스터">
+            </div>
+        </div>
+        <span class="highlight-title">Hi👋 코딩몬스터</span>
+    </div>
+    <div class="highlight-item">
+        <div class="highlight-image-wrapper">
+            <div class="highlight-image-inner">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=150&h=150&fit=crop" alt="Hello goorm">
+            </div>
+        </div>
+        <span class="highlight-title">Hello goorm...</span>
+    </div>
+    <div class="highlight-item">
+        <div class="highlight-image-wrapper">
+            <div class="highlight-image-inner">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=150&h=150&fit=crop" alt="New Class">
+            </div>
+        </div>
+        <span class="highlight-title">New Class</span>
     </div>
 </div>
